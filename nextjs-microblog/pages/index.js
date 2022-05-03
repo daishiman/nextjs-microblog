@@ -7,26 +7,56 @@ import utilStyle from "../styles/utils.module.css";
 
 export default function Home() {
 	return (
-		<Layout>
-			<section className={utilStyle.headingMd}>
-				<p>日々の気づきを投稿します</p>
-			</section>
+    <Layout>
+      <section className={utilStyle.headingMd}>
+        <p>日々の気づきを投稿します</p>
+      </section>
 
-			<section>
-				<h2>エンジニアブログ</h2>
-				<div>
-					<article>
-						<Link href="/">
-							<img src="/images/thumbnail01.jpg" alt="" />
-						</Link>
-						<Link href="/">
-							<a>だいしのブログ</a>
-						</Link>
-						<br />
-						<small>2022/05/03</small>
-					</article>
-				</div>
-			</section>
-		</Layout>
-	);
+      <section className={`${utilStyle.headingMd} ${utilStyle.padding1px}`}>
+        <h2>エンジニアブログ</h2>
+        <div className={styles.grid}>
+          <article>
+            <Link href="/">
+              <img src="/images/thumbnail01.jpg" className={styles.thumbnailImage} />
+            </Link>
+            <Link href="/">
+              <a className={utilStyle.boldText}>だいしのブログ</a>
+            </Link>
+            <br />
+            <small className={utilStyle.lightText}>2022/05/03</small>
+          </article>
+          <article>
+            <Link href="/">
+              <img src="/images/thumbnail01.jpg" className={styles.thumbnailImage} />
+            </Link>
+            <Link href="/">
+              <a className={utilStyle.boldText}>だいしのブログ</a>
+            </Link>
+            <br />
+            <small className={utilStyle.lightText}>2022/05/03</small>
+          </article>
+          <article>
+            <Link href="/">
+              <img src="/images/thumbnail01.jpg" className={styles.thumbnailImage} />
+            </Link>
+            <Link href="/">
+              <a className={utilStyle.boldText}>だいしのブログ</a>
+            </Link>
+            <br />
+            <small className={utilStyle.lightText}>2022/05/03</small>
+          </article>
+          <article>
+            <Link href="/">
+              <img src="/images/thumbnail01.jpg" className={styles.thumbnailImage} />
+            </Link>
+            <Link href="/">
+              <a className={utilStyle.boldText}>だいしのブログ</a>
+            </Link>
+            <br />
+            <small className={utilStyle.lightText}>2022/05/03</small>
+          </article>
+        </div>
+      </section>
+    </Layout>
+  );
 }
