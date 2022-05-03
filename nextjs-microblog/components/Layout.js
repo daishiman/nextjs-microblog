@@ -1,15 +1,16 @@
 import Head from "next/head";
+import styles from "./layout.module.css";
 
 const name = "manju code";
-export const sitTitle = "manju blog";
+export const siteTitle = "manju blog";
 
 function Layout({ children }) {
 	return (
-		<div>
+		<div className={styles.container}>
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<header>
+			<header className={styles.header}>
 				<img src="/images/profile.png" />
 				<h1>{name}</h1>
 			</header>
